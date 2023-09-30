@@ -18,7 +18,7 @@ const mongoose = require('mongoose');
 
 const connectToMongo = () => {
     try {
-        const mongoDB = "mongodb://127.0.0.1/compiler";
+        const mongoDB = "mongodb+srv://karanraul02:1deq9u8aLMlgtdmM@cluster0.u0sdmgg.mongodb.net/compiler";
         mongoose.connect(mongoDB);
 
     } catch (error) {
