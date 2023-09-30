@@ -13,7 +13,7 @@ function CreateRoom() {
         // Define an asynchronous function to fetch users
         async function fetchUsers() {
             try {
-                const response = await Axios.post('http://localhost:2121/api/getPlayers', { roomId });
+                const response = await Axios.post('https://coding-comp-backend.vercel.app/api/getPlayers', { roomId });
                 setUsers(response.data);
             } catch (error) {
                 console.error(error);
@@ -32,7 +32,7 @@ function CreateRoom() {
     const startRoom = async () => {
         try {
             let user = localStorage.getItem('email');
-            const response = await Axios.post('http://localhost:2121/api/start', {}, {
+            const response = await Axios.post('https://coding-comp-backend.vercel.app/api/start', {}, {
                 headers: {
                     user
                 }

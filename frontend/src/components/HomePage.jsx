@@ -10,7 +10,7 @@ function HomePage() {
     // This code will run only once when the component is initially mounted
     const createRoom = async () => {
         try {
-            const data = await Axios.post('http://localhost:2121/api/createRoom', {},
+            const data = await Axios.post('https://coding-comp-backend.vercel.app/api/createRoom', {},
                 {
                     headers: {
                         "user": localStorage.getItem('email')
@@ -35,7 +35,7 @@ function HomePage() {
     const joinRoom = async () => {
         // try {
         // console.log(localStorage.getItem('email'));
-        const response = await Axios.put('http://localhost:2121/api/joinRoom', { roomId },
+        const response = await Axios.put('https://coding-comp-backend.vercel.app/api/joinRoom', { roomId },
             {
                 headers: {
                     'user': localStorage.getItem('email')
@@ -58,7 +58,7 @@ function HomePage() {
 
     const exitRoom = async () => {
         try {
-            const response = await Axios.post('http://localhost:2121/api/exitRoom', { email: localStorage.getItem('email') });
+            const response = await Axios.post('https://coding-comp-backend.vercel.app/api/exitRoom', { email: localStorage.getItem('email') });
             if (response.data) {
                 setFlag(true);
                 setMsg(response.data.msg);

@@ -48,7 +48,7 @@ const Main = () => {
     useEffect(() => {
         const getUsers = async () => {
             try {
-                const getUsers = await Axios.post('http://localhost:2121/api/getUserDetails', { roomId });
+                const getUsers = await Axios.post('https://coding-comp-backend.vercel.app/api/getUserDetails', { roomId });
                 if (getUsers.data)
                     setAllusers(getUsers.data);
 
@@ -70,7 +70,7 @@ const Main = () => {
                 input: userInput,
                 isSolved: false
             }
-            const response = await Axios.post('http://localhost:2121/api/submitCode', data,
+            const response = await Axios.post('https://coding-comp-backend.vercel.app/api/submitCode', data,
                 {
                     headers: {
                         roomid: localStorage.getItem('roomId'),

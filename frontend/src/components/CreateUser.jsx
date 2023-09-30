@@ -48,7 +48,7 @@ const createUser = () => {
             return;
         }
         // let input = { email: user }
-        const data = await Axios.post('http://localhost:2121/api/createUser', { email: user });
+        const data = await Axios.post('https://coding-comp-backend.vercel.app/api/createUser', { email: user });
         if (data.data.err) {
             setMsg(data.data.err);
             setAlert(true);
