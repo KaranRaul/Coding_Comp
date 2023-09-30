@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../App/MERN_STACK/code-compiler"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../WEB D/React/notebook/i-notebook/backend"
+		},
+		{
+			"path": "../../App/MERN_STACK/DEV/vite-course-app"
+		}
+	],
+	"settings": {}
+}

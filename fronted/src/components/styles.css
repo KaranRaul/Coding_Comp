@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #424242;
+    /* Replace with your desired background color */
+}
+
+/* NAVBAR STYLES */
+.text-transition-overlay {
+    position: absolute;
+
+    justify-content: start;
+}
+
+.text-transition-content {
+    /* Styles for the text content */
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    color: #333;
+    /* Text color */
+    /* Other styles for the text content */
+}
+
+.flex-class {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.flex-class-btn {
+    margin-left: 190px;
+}
+
+.room-id-bar {
+    margin-top: 10px;
+    margin-left: 25px;
+    border-radius: 10px;
+    /* color: white; */
+    /* You can adjust the value to control the roundness of the corners */
+    border: 1px solid #dee2e6;
+    /* Optional: You can add a border to the div */
+    padding: 4px;
+    /* Optional: Add padding to create space inside the div */
+    background-color: #ffffff;
+
+}
+
+/* LoginForm.css */
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    border-radius: 10px;
+    /* You can adjust the value to control the roundness of the corners */
+    border: 2px solid #000;
+    /* Optional: You can add a border to the div */
+    padding: 20px;
+}
+
+.login-container .title {
+    margin: 0 0 35px 0;
+}
+
+.login-container .text-field {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.login-container .button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.login-container .button:hover {
+    background-color: #0056b3;
+}
+
+/* LoginForm.css  END*/
+
+/* HOMEPAGE */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Center vertically within viewport */
+    text-align: center;
+
+}
+
+/* Style for the buttons */
+.home-button {
+
+    margin: 10px;
+    /* Add spacing around buttons */
+    padding: 20px 40px;
+    /* Adjust padding for button size */
+    font-size: 18px;
+    /* Increase font size for a professional look */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+
+.room-id {
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+    color: white;
+}
+
+.card-comp {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: 50px;
+    max-width: 350px;
+    /* Set the maximum width */
+    /* max-height: 800px; */
+    /* Set the maximum height */
+    overflow: hidden;
+    gap: 15px;
+}
+
+.card-body {
+    max-width: 300px;
+    /* Set the maximum width */
+    max-height: 70px;
+}
+
+.rounded-div {
+    border-radius: 10px;
+    /* You can adjust the value to control the roundness of the corners */
+    border: 2px solid #000;
+    /* Optional: You can add a border to the div */
+    padding: 20px;
+    /* Optional: Add padding to create space inside the div */
+    background-color: #595959;
+    /* Optional: Set a background color for the div */
+}
+
+.button-start {
+    margin-top: 10px;
+}
+
+/* THE MAIN COMPILER CODE IS BELOW */
+
+/* App.css */
+.container1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* min-height: 500vh; */
+    background-color: #424242;
+}
+
+/* .App {
+    
+justify-content: flex-start;
+align-items: flex-start;
+min-height: 100vh;
+background-color: #363636;
+} */
+
+
+
+/* Basic styles for the main container */
+
+
+/* Styles for the editor and input/output sections */
+.main {
+    display: flex;
+    flex-direction: row;
+    background-color: #5e6060e7;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1100px;
+    /* max-height: 650px; */
+
+    margin-top: 25px;
+    margin-left: 25px;
+    align-items: stretch;
+
+}
+
+.left-container {
+    flex: 0.6;
+    /* Take up 60% of the width */
+    padding: 10px;
+    min-height: 600px;
+    max-height: 650px;
+    /* Set a minimum height for small screens */
+}
+
+.right-container {
+    flex: 0.4;
+    /* Take up 40% of the width */
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 370px;
+    margin-left: 20px;
+    /* Add space between editor and input/output */
+    min-height: 300px;
+
+    /* Set a minimum height for small screens */
+}
+
+/* Styles for the input box and output box */
+.input-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.output-box pre {
+    white-space: pre-wrap;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 100px;
+}
+
+/* Styles for buttons */
+.run-btn {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-btn {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.CodeMirror {
+    /* height: calc(100vh - 50px); */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #fff;
+}
+
+/* Styles for user loading on the right */
+.user-loading {
+    flex: 1;
+    /* Take up all available space */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin-left: 20px;
+    /* Add space between editor and user loading */
+    min-height: 300px;
+    /* Set a minimum height for small screens */
+}
+
+/* NAVBAR CSS */
+
+
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        /* Change to column layout on small screens */
+    }
+
+    .left-container,
+    .right-container,
+    .user-loading {
+        flex: 1;
+        /* Take up all available space */
+        padding: 10px;
+        margin-left: 0;
+        /* Reset margin for small screens */
+    }
+}
+
+/* MAIN COMPILER CODE ENDS */
+
+
+/* Card Container */
+.user-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 25px;
+    margin-left: 25px;
+    max-width: 300px;
+    /* Adjust the maximum width as needed */
+}
+
+/* Card Component */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    /* Add margin between card components */
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* CARD CONTAONER NDS */

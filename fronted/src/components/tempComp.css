@@ -1,0 +1,142 @@
+/* App.css */
+
+/* Basic styles for the main container */
+body {
+    background-color: #363636;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    /* display: flex; */
+    justify-content: flex-start;
+    /* Shift content to the left */
+    align-items: flex-start;
+    /* Align content to the top */
+    min-height: 100vh;
+    background-color: #363636;
+}
+
+/* Styles for the editor and input/output sections */
+.main {
+    display: flex;
+    flex-direction: row;
+    background-color: #939da0;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1000px;
+    /* max-height: 650px; */
+
+    margin-top: 25px;
+    margin-left: 25px;
+
+}
+
+.left-container {
+    flex: 0.6;
+    /* Take up 60% of the width */
+    padding: 10px;
+    min-height: 300px;
+    max-height: 650px;
+    /* Set a minimum height for small screens */
+}
+
+.right-container {
+    flex: 0.4;
+    /* Take up 40% of the width */
+    padding: 10px;
+    background-color: #ededed;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 370px;
+    margin-left: 20px;
+    /* Add space between editor and input/output */
+    min-height: 300px;
+    /* Set a minimum height for small screens */
+}
+
+/* Styles for the input box and output box */
+.input-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.output-box pre {
+    white-space: pre-wrap;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 100px;
+}
+
+/* Styles for buttons */
+.run-btn {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-btn {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.CodeMirror {
+    /* height: calc(100vh - 50px); */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #fff;
+}
+
+/* Styles for user loading on the right */
+.user-loading {
+    flex: 1;
+    /* Take up all available space */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin-left: 20px;
+    /* Add space between editor and user loading */
+    min-height: 300px;
+    /* Set a minimum height for small screens */
+}
+
+/* NAVBAR CSS */
+
+
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        /* Change to column layout on small screens */
+    }
+
+    .left-container,
+    .right-container,
+    .user-loading {
+        flex: 1;
+        /* Take up all available space */
+        padding: 10px;
+        margin-left: 0;
+        /* Reset margin for small screens */
+    }
+}
