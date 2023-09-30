@@ -14,10 +14,10 @@ function App() {
       <Router>
 
         <Routes>
-          <Route path='/' element={<CreateUser />} />
-          <Route path='/homepage' element={<HomePage />} />
-          <Route path='/createroom' element={<CreateRoom />} />
-          <Route path='/main' element={< Main />} />
+          <Route exact path='/' element={<CreateUser />} />
+          <Route exact path='/homepage' element={<HomePage />} />
+          <Route exact path='/createroom' element={<CreateRoom />} />
+          <Route exact path='/main' element={< Main />} />
           {/* <Route path='/test' element={<CodeEditor />} /> */}
         </Routes>
 
