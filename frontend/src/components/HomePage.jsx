@@ -3,7 +3,9 @@ import { Alert, Button, } from '@mui/material'
 import Axios from 'axios';
 import "../index.css"
 import createMixins from '@mui/material/styles/createMixins';
+import { useNavigate } from 'react-router-dom';
 function HomePage() {
+    let navigate = useNavigate();
     const [roomId, setRoomId] = useState();
     const [flag, setFlag] = useState(false);
     const [msg, setMsg] = useState();
@@ -25,7 +27,8 @@ function HomePage() {
             }
             else {
                 localStorage.setItem('roomId', data.data.room.roomKey);
-                window.location = '/main';
+                // window.location = '/main';
+                navigate('/main');
             }
         } catch (error) {
             console.log(error);
@@ -48,7 +51,8 @@ function HomePage() {
         }
         else {
             localStorage.setItem('roomId', roomId);
-            window.location = '/main'
+            // window.location = '/main'
+            navigate('/main');
         }
 
         // } catch (error) {

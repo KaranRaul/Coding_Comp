@@ -12,7 +12,6 @@ function App() {
   return (
     <>
       <Router>
-
         <Routes>
           <Route path='/' element={<CreateUser />} />
           <Route path='/homepage' element={<HomePage />} />

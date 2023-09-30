@@ -2,6 +2,7 @@ import { Button, TextField, Typography, Alert } from '@mui/material'
 import React, { useState } from 'react'
 import { makeStyles } from '@mui/styles';
 import Axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 const useStyles = makeStyles({
     root: {
         // background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
@@ -37,6 +38,7 @@ const useStyles = makeStyles({
     },
 });
 const createUser = () => {
+    let navigate = useNavigate();
     const classes = useStyles();
     const [alert, setAlert] = useState(false);
     const [msg, setMsg] = useState();
@@ -62,7 +64,8 @@ const createUser = () => {
         }
         if (data.data) {
             localStorage.setItem('email', user);
-            window.location = '/homepage';
+            // window.location = '/homepage';
+            navigate('/homepage')
         }
     }
     return (

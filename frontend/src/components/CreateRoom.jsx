@@ -3,7 +3,9 @@ import Axios from 'axios';
 import './styles.css';
 import { Button } from '@mui/material';
 import { Image } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 function CreateRoom() {
+    let navigate = useNavigate();
     const [roomId, setRoomId] = useState(localStorage.getItem('roomId'));
     const [users, setUsers] = useState([]);
     // The empty dependency array ensures that this effect runs only once
@@ -38,7 +40,8 @@ function CreateRoom() {
                 }
             });
             if (response.data.msg) {
-                window.location = '/main';
+                // window.location = '/main';
+                navigate('/main');
             }
         } catch (error) {
         }
