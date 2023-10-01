@@ -127,8 +127,8 @@ const Main = () => {
     //     }, 60000);
 
     // }, [])
-    const [text, setText] = useState('coding com');
-    const targets = ['petition', 'piler'];
+    const [text, setText] = useState('coding comp');
+    const targets = ['etition', 'iler'];
     const delay = 200; // Adjust the delay between adding/removing characters as needed
 
     useEffect(() => {
